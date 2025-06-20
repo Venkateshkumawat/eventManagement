@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { createEvent, getEvents, updateEvent, deleteEvent } = require('../controllers/EventController');
-const authMiddleware = require('../Middlewares/authMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 router.post('/', authMiddleware, createEvent);
 router.get('/', getEvents);

@@ -1,6 +1,6 @@
 const express= require('express');
 const { submitQuery, getAllQueries } = require('../controllers/queryController');
-const authMiddleware = require('../Middlewares/authMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 const router = express.Router();
 
