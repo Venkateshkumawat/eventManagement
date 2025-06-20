@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { registerForEvent, getAllRegistrations, cancelRegistration} = require('../controllers/RegistrationController');
-const authMiddleware = require('../Middlewares/authMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 router.post('/', authMiddleware, registerForEvent);
 router.get('/me', authMiddleware, getAllRegistrations);
