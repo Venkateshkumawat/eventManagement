@@ -1,4 +1,4 @@
-const Event = require('../models/eventModel');
+const Event = require('../models/EventModel');
 const asyncHandler = require('express-async-handler');
 
 // ✅ Create Event
